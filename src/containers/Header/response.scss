@@ -1,0 +1,287 @@
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        max-width: 740px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .header{
+        .header-inner{
+            padding: 28px 0 19px 0;
+
+
+            .logo{
+                flex-direction: column;
+                h4{
+                    padding-top: 8px;
+                }
+            }
+
+            .network{
+                &-title{
+                    font-size: 12px;
+                }
+
+                .icons{
+                    padding-top: 17px;
+                    .icon{
+                        a{
+                            background: transparent;
+                            padding: 0 17px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-section{
+        .inner-section{
+            padding: 110px 0 132px 0;
+            position: relative;
+
+            .left{
+                padding-top: 200px;
+                .page-name{
+                    position: absolute;
+                    top: 130px;
+                }
+
+                .page-title{
+                    top: 200px;
+                    position: absolute;
+                }
+
+                .page-text{
+                    width: 317px;
+                }
+
+                .blocks{
+                    width: 340px;
+                }
+            }
+
+            .right{
+                padding-top: 200px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:690px) {
+    .header{
+        .humb{
+            width: 22px;
+        }
+        .header-inner{
+            .logo{
+                align-items: flex-start;
+                padding-left: 53px;
+                img{
+                    width: 127px;
+                }
+                h4{
+                    padding-left: 0;
+                }
+            }
+            .network {
+                .icons{
+                    .icon{
+                        a{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .connect{
+            display: none;
+        }
+    }
+    .hero-section{
+        .inner-section{
+            flex-direction: column;
+            align-items: flex-start;
+
+            .left{
+                padding-top: 0;
+                text-align: left;
+                .page-name{
+                    text-align: left;
+                    top: 0;
+                    position: static;
+                }
+                .page-title{
+                    top: 0;
+                    position: static;
+                }
+                .page-text{
+                    text-align: left;
+                    width: 100%;
+                }
+
+                .blocks{
+                    width: 90%;
+                }
+            }
+
+            .right{
+                padding-top: 20px;
+                width: 90%;
+            }
+
+            
+        }
+    }
+}
+
+@media screen and (max-width:476px) {
+    .container{
+        max-width: 440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .header{
+        .humb{
+            img{
+                width: 22px;
+                object-fit: contain;
+            }
+        }
+        .header-inner{
+            align-items: flex-start;
+            .logo{
+                width: 200px;
+                padding-left: 30px;
+                h4{
+                    font-size: 12px;
+                    width: 200px;
+                }
+            }
+
+            .network{
+                &-title{
+                    display: none;
+                }
+
+                .icons {
+                    padding-top: 42px;
+                    .icon{
+                        a{
+                            img{
+                                padding: 0;
+                            }
+                            padding: 0;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .connect{
+                position: relative;
+                display: block;
+                .span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 150px;
+                    .conect-title{
+                        font-size: 12px;
+                    }
+                }
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hero-section{
+        .inner-section{
+            padding: 46px 0 63px 0;
+            .left{
+                padding: 0;
+                text-align: center;
+                .page-name{
+                    text-align: center;
+                }
+
+                .page-text{
+                    display: none;
+                }
+
+                .blocks{
+                    width: 100%;
+                }
+            }    
+            
+            .right{
+                padding: 0;
+                .book{
+                    background: none;
+                    padding: 0;
+                    .book-name{
+                        display: none;
+                    }
+
+                    .book-title{
+                        font-style: normal;
+                        padding-top: 18px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-shadow: 4px 5px 28px #000000;
+                    }
+
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero-section{
+        .inner-section{
+            .left{
+                .blocks{
+                    .item{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .modal{
+        padding: 20px 20px 0 20px !important;
+
+        .modal-top{
+            flex-direction: column !important;
+            margin-bottom: 20px !important;
+            .close-btn{
+                padding-bottom: 15px;
+            }
+            .logo-images{
+                padding-left: 0 !important;
+            }
+        }
+    }
+}

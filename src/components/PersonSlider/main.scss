@@ -1,0 +1,154 @@
+.innerslick {
+    padding: 50px 0 100px 0;
+    display: none;
+
+    .page-top {
+        text-align: center;
+
+        .links {
+            margin-bottom: 81px;
+
+            a {
+                display: inline-block;
+
+                img {
+                    padding-left: 22px;
+                }
+            }
+        }
+
+        .text-block {
+            margin-bottom: 63px;
+
+            h1 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 56px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+
+    .page-bottom {
+        display: flex;
+        align-items: center;
+
+        .left {
+            width: 340px;
+            height: 539px;
+            padding-right: 19px;
+            position: relative;
+
+            .pos-span {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 150%;
+                color: #FFFFFF;
+                position: absolute;
+                z-index: 100;
+                left: 29px;
+                right: 23px;
+                bottom: 26px;
+            }
+
+            img {
+                background: linear-gradient(1.8deg, rgba(0, 0, 0, 0.54) 4.49%, rgba(0, 0, 0, 0) 35.12%), ;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                object-fit: cover;
+            }
+        }
+
+        .right {
+            padding-left: 20px;
+
+            .row {
+                display: flex;
+
+                .col {
+                    margin: 0 30px;
+                    width: 45%;
+
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 150%;
+                        color: #000000;
+                        max-width: 302px;
+                        text-align: left;
+
+                        &.has-mar {
+                            margin-bottom: 71px;
+                        }
+
+                        &.has-margin {
+                            margin-bottom: 44px;
+                        }
+
+                        &.has-margins {
+                            margin-bottom: 80px;
+                        }
+
+                        &.has-mars {
+                            margin-bottom: 53px;
+                        }
+
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url('../../assets/icons/union.png');
+                            width: 20px;
+                            height: 20px;
+                            background-size: cover;
+                            left: -30px;
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .innerslick{
+        // padding: 0 !important;
+        padding-top: 0 !important;
+        display: block;
+        width: 100%;
+        .row{
+            width: 300px !important;
+            display: block !important;
+
+            .col{
+                width: 100% !important;
+                height: 200px !important;
+                margin: 0;
+
+                p{
+                    margin: 0 !important;
+                    padding: 15px 25px !important;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .page-bottom{
+            .right {
+                padding-left: 0 !important;
+
+                .row{
+                    .col{
+                        margin: 0 !important;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

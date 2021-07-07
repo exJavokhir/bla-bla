@@ -1,0 +1,42 @@
+.slider-pop{
+    padding: 20px;
+    width: 100%;
+
+    .inner-pop-slider{
+        .li{
+            width: 100%;
+            height: 180px;
+            label{
+                height: 100% !important;
+                width: 100% !important;
+            }
+            input{
+                top: 0 !important;
+            }
+        }
+    }
+}
+
+.slick-active{
+    display: none !important;
+}
+
+.slick-dots-bottom{
+    bottom: 0 !important;
+    margin: 0 !important;
+    background-color: rgba($color: #000000, $alpha: 0.7) !important;
+    padding: 10px !important;
+    li{
+        width: 30px !important;
+        opacity: 1 !important;
+        button{
+            opacity: 1 !important;
+        }
+
+        
+    }
+    .slick-active {
+        background: red !important;
+        color: red !important;
+    }
+}

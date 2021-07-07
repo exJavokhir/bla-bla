@@ -1,0 +1,47 @@
+ .li {
+     position: relative;
+     margin: 0 !important;
+     padding: 0 !important;
+     width: 159px;
+
+     input {
+         position: absolute;
+         z-index: 100;
+         left: 0;
+         right: 0;
+         margin: auto;
+         top: -15px;
+         width: 27px;
+         background: red;
+         height: 27px;
+         display: block;
+
+         &:checked+label {
+             background-color: #DDA046;
+         }
+
+     }
+
+     label {
+         width: 159px;
+         height: 140px;
+         display: block;
+         padding: 0;
+         margin-right: 0;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         box-shadow: 0px 0px 21px 1px rgba(39, 17, 10, 0.16);
+     }
+
+     span {
+         padding-top: 10px;
+         display: block;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         color: #000000;
+     }
+ }
+ 

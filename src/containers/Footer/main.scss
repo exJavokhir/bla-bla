@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+.footer-inner{
+    padding: 65px 0 75px 0;
+    box-sizing: border-box;
+    position: relative;
+
+    .back-to-top{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        filter: drop-shadow(0px 0px 62px #DDA046);
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        
+        span{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.5);
+            display: block;
+            padding-bottom: 20px;
+        }
+        li{
+            padding-bottom: 15px;
+            a{
+                transition: 0.1s;
+                &:hover{
+                    color: #DDA046;
+                }
+            }
+            &.has-bef{
+                padding-left: 40px;
+                position: relative;
+
+                &::before{ 
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    top: 0;
+                    left: 0;
+                    background-size: contain;
+                }
+
+                &.map{
+                    &::before{
+                        background-image: url('../../assets/icons/map.png');
+                    }
+                }
+                &.ema {
+                    &::before {
+                        background-image: url('../../assets/icons/email.png');
+                    }
+                }
+                &.cal {
+                    &::before {
+                        background-image: url('../../assets/icons/call.png');
+                    }
+                }
+            }
+
+            &.flex{
+                display: flex;
+                align-items: center;
+                a{
+                    img{
+                        padding-right: 20px;
+                    }
+                }
+                span{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+            a{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(255, 255, 255, 0.5);
+
+                &.al{
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.ul-one-block {
+    display: flex;
+    justify-content: space-between;
+    .child-one{
+        padding-right: 20px;
+    }
+}

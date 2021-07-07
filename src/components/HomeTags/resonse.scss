@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 740px;
+    }
+    .home-block {
+        justify-content: center;
+        flex-wrap: wrap;
+        .item-home{
+            width: 45% !important;
+            padding: 20px 15px 0 20px !important;
+            height: 400px !important;
+
+            .top{
+                .title{
+                    font-size: 24px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-block{
+        display: none !important;
+    }
+}

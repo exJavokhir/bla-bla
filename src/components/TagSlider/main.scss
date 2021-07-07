@@ -1,0 +1,113 @@
+.home-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .slider-slick{
+        width: 100%;
+        display: none;
+    }
+
+    .item-home {
+        width: 30%;
+        box-sizing: border-box;
+        height: 476px;
+        padding: 30px 20px 0 30px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        transition: 0.3s;
+
+        &.one{
+            background-image: url('../../assets/images/image1.png');
+        }
+        &.two{
+            background-image: url('../../assets/images/image2.png');
+        }
+        &.thre{
+            background-image: url('../../assets/images/image3.png');
+        }
+        &.four {
+            background-image: url('../../assets/images/image4.png');
+        }
+        &.five {
+            background-image: url('../../assets/images/image5.png');
+        }
+        &.six {
+            background-image: url('../../assets/images/image6.png');
+        }
+
+        &:hover {
+            background-color: #DDA046;
+
+            .primary {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 62px #D3BE88;
+            }
+
+            .top {
+                .sircle {
+                    background-color: #ffffff;
+                }
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .sircle {
+                display: block;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: #DDA046;
+                transition: all ease 0.3s;
+
+            }
+
+            .title {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 33px;
+                color: #000000;
+                padding-top: 12px;
+            }
+        }
+
+        .bottom {
+            margin-top: 56px;
+
+            &.alone {
+                margin-top: 25px;
+            }
+
+            a {
+                transition: 0.3s;
+                display: inline-block;
+
+                img {
+                    padding-left: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-blocks{
+        .slider-slick{
+            display: block !important;
+
+            .item-home{
+                width: 100% !important;
+            }
+        }
+    }
+
+    .slick-arrow{
+        display: none !important;
+    }
+}
